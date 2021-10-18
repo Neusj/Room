@@ -17,6 +17,7 @@ public class WordViewModel extends AndroidViewModel {
         super(application);
         mRepository = new WordRepository(application);
         mAllWords = mRepository.getAllWords();
+
     }
 
     LiveData<List<Word>> getAllWords() { return mAllWords; }
